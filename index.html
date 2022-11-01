@@ -4,9 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>M-sat Match</title>
 </head>
 <body>
+
+  <h1>M-Sat Match</h1>
+  <p>A little program to check for matches :)</p>
+    <form id="jsonFile" name="jsonFile" enctype="multipart/form-data" method="post">
+
+        <fieldset>
+          <h2>Json File for M-Sat matching</h2>
+           <input type='file' id='fileinput'>
+           <input type='button' id='btnLoad' value='Load' onclick='loadFile();'>
+        </fieldset>
+        <fieldset>
+          <h2>Json File for Parent-Offspring</h2>
+           <input type='file' id='fileinputPO'>
+           <input type='button' id='btnLoadPO' value='Load' onclick='loadFilePO();'>
+        </fieldset>
+      </form>
+      <h3>Results:</h3>
+      <h4>M-sat match results will appear beneath here
+        <ul class="results">
+
+        </ul>
+      </h4>
+      <h4>Parent - Offspring match results will appear beneath here
+        <ul class="pOResults">
+
+        </ul>
+      </h4>
     
     <script src="JS/main.js"></script>
 </body>
